@@ -1,8 +1,12 @@
-package oop.seminars;
+package oop.seminars.animals;
+
+import oop.seminars.Animal;
+import oop.seminars.Owner;
+import oop.seminars.Ability.Flyable;
 
 import java.time.LocalDate;
 
-public class Parrot extends Animals{
+public class Parrot extends Animal implements Flyable {
     protected static final int NUMBEROFPAWS;
     protected static final boolean PRESENCEOFTAIL;
     protected static final boolean FLYABLE;
@@ -24,17 +28,10 @@ public class Parrot extends Animals{
         super();
     }
 
-//    @Override
-//    public void toGo(){
-//        System.out.println(name + " не умеет бегать");
-//    }
     @Override
-    public void fly(){
-        System.out.println(name + " отлично летает");
+    public double fly(){
+        return 120.0;
     }
-//    @Override
-//    public void swim(){
-//        System.out.println(name + " не умеет плавать");
-//    }
+
 
 }

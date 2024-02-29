@@ -1,8 +1,11 @@
-package oop.seminars;
+package oop.seminars.animals;
+
+import oop.seminars.Animal;
+import oop.seminars.Owner;
 
 import java.time.LocalDate;
 
-public class EarthWorm extends Animals{
+public class EarthWorm extends Animal {
     protected static final int NUMBEROFPAWS;
     protected static final boolean PRESENCEOFTAIL;
     protected static final boolean FLYABLE;
@@ -25,16 +28,6 @@ public class EarthWorm extends Animals{
     public EarthWorm() {
         super();
     }
-//    @Override
-//    public void toGo(){
-//        System.out.println(name + " не умеет бегать");
-//    }
-//    @Override
-//    public void fly(){
-//        System.out.println(name + " не умеет летать");
-//    }
-//    @Override
-//    public void swim(){
-//        System.out.println(name + " не умеет плавать");
-//    }
+
+
 }

@@ -1,8 +1,12 @@
-package oop.seminars;
+package oop.seminars.animals;
+
+import oop.seminars.Animal;
+import oop.seminars.Owner;
+import oop.seminars.Ability.Swimmable;
 
 import java.time.LocalDate;
 
-public class FishSword extends Animals{
+public class FishSword extends Animal implements Swimmable {
     protected static final int NUMBEROFPAWS;
     protected static final boolean PRESENCEOFTAIL;
     protected static final boolean FLYABLE;
@@ -23,16 +27,10 @@ public class FishSword extends Animals{
     public FishSword() {
         super();
     }
-//    @Override
-//    public void toGo(){
-//        System.out.println(name + " не умеет бегать");
-//    }
-//    @Override
-//    public void fly(){
-//        System.out.println(name + "  не умеет летать");
-//    }
+
     @Override
-    public void swim(){
-        System.out.println(name + " плавает оч быстро");
+    public double swim(){
+        return 90.0;
     }
+
 }

@@ -1,8 +1,12 @@
-package oop.seminars;
+package oop.seminars.animals;
+
+import oop.seminars.Animal;
+import oop.seminars.Owner;
+import oop.seminars.Ability.Runable;
 
 import java.time.LocalDate;
 
-public class Ostrich extends Animals{
+public class Ostrich extends Animal implements Runable {
     protected static final int NUMBEROFPAWS;
     protected static final boolean PRESENCEOFTAIL;
     protected static final boolean FLYABLE;
@@ -24,16 +28,10 @@ public class Ostrich extends Animals{
         super();
     }
 
+
+
     @Override
-    public void toGo(){
-        System.out.println(name + " бегает оч быстро");
+    public double run() {
+        return 70.0;
     }
-//    @Override
-//    public void fly(){
-//        System.out.println(name + "  не умеет летать");
-//    }
-//    @Override
-//    public void swim(){
-//        System.out.println(name + " не умеет плавать");
-//    }
 }

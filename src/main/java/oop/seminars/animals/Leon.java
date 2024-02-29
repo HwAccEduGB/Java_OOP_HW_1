@@ -1,8 +1,13 @@
-package oop.seminars;
+package oop.seminars.animals;
+
+import oop.seminars.Animal;
+import oop.seminars.Owner;
+import oop.seminars.Ability.Runable;
+import oop.seminars.Ability.Swimmable;
 
 import java.time.LocalDate;
 
-public class Leon extends Animals {
+public class Leon extends Animal implements Runable, Swimmable {
     protected static final int NUMBEROFPAWS;
     protected static final boolean PRESENCEOFTAIL;
     protected static final boolean FLYABLE;
@@ -24,17 +29,15 @@ public class Leon extends Animals {
     public Leon() {
         super();
     }
+
+
     @Override
-    public void toGo(){
-        System.out.println(name + " бегает оч быстро");
+    public double swim(){
+        return 3.0;
     }
-//    @Override
-//    public void fly(){
-//        System.out.println(name + "  не умеет летать");
-//    }
     @Override
-    public void swim(){
-        System.out.println(name + " плавает, но медленно");
+    public double run() {
+        return 50.0;
     }
 
 

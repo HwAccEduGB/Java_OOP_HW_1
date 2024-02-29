@@ -1,8 +1,12 @@
-package oop.seminars;
+package oop.seminars.animals;
+
+import oop.seminars.Animal;
+import oop.seminars.Owner;
+import oop.seminars.Ability.Runable;
 
 import java.time.LocalDate;
 
-public class Gorilla extends Animals{
+public class Gorilla extends Animal implements Runable {
     protected static final int NUMBEROFPAWS;
     protected static final boolean PRESENCEOFTAIL;
     protected static final boolean FLYABLE;
@@ -23,16 +27,9 @@ public class Gorilla extends Animals{
     public Gorilla() {
         super();
     }
+
     @Override
-    public void toGo(){
-        System.out.println(name + " бегает достаточно быстро");
+    public double run() {
+        return 40.0;
     }
-//    @Override
-//    public void fly(){
-//        System.out.println(name + "  не умеет летать");
-//    }
-//    @Override
-//    public void swim(){
-//        System.out.println(name + " не умеет плавать");
-//    }
 }
